@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.right{
+    padding: 1rem 2rem;
+}
+h1{
+    padding-bottom: 1rem;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+.left img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: -5rem;
+}
+.join{
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+
+}
+li{
+    display: flex;
+    align-items:flex-start;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+li span{
+    color: hsl(235, 18%, 26%);
+    letter-spacing: 0.01rem;
+}
+ul{
+    padding-bottom: 0.5rem;
+}
+form p{
+    color: hsl(235, 18%, 26%);
+    font-weight: 700;
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 100%;
+    padding: 0.7rem;
+    outline: none;
+    border: 1px solid;
+    border-color: hsl(231, 7%, 60%);
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+button{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background: hsl(235, 18%, 26%);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.error{
+    color: hsl(4, 100%, 67%);
+    font-weight: 400;
+    font-size: 12px;
+    display: none;
+}
+.input-error{
+    background: hsl(4, 58%, 78%);
+    color:hsl(4, 100%, 67%);
+}
+.hidden {
+    display: none;
+}
+.thankyou-state{
+    background: #fff;
+    padding: 4rem 2rem ;
+    max-width: 400px;
+}
+.thankyou-state img{
+    padding: 1rem 0;
+}
+.thankyou-state h1{
+    padding: 0 1rem 1rem 0;
+}
+.dismiss{
+    padding-top: 11rem;
+}
+.join span{
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+@media screen and (min-width: 48em){
+    .main{
+        max-width: 800px;
+        flex-direction: row;
+        margin-top: 3rem;
+        border-radius: 20px;
+    }
+    .left{
+        padding: 1rem;
+    }
+    .left img{
+        margin-top: 0;
+    }
+    .right{
+        padding-top: 5rem;
+    }
+    form{
+        padding-top: 1rem;
+    }
+    input:hover{
+        cursor: pointer;
+    }
+    button:hover{
+        cursor: pointer;
+        background: linear-gradient(to right,hsl(340, 76%, 68%),hsl(4, 100%, 67%))  ;
+        color: #fff;
+    }
+    .thankyou-state{
+        max-width: 500px;
+        margin-top: 5rem;
+        padding: 4rem 2rem ;
+        border-radius: 20px;
+
+    }
+    .dismiss{
+        padding-top: 1rem;
+    }
+   
+}
